@@ -14,7 +14,7 @@ maxSubarraySum([],4) // null
 //   }
 
 //   var max = -Infinity;
-//   for (let i = 0; i < arr.legnth - num; i++) {
+//   for (let i = 0; i < arr.length - num; i++) {
 //     sum = 0
 //     for (let j = 0; j < num; j++){
 
@@ -27,7 +27,7 @@ maxSubarraySum([],4) // null
 //   return max
 // }
 
-function MaxSubArraySum(arr, num) {
+function maxSubArraySum(arr, num) {
   let maxSum = 0;
   let tempSum = 0;
 
