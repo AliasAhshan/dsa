@@ -66,6 +66,26 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    var count = 0;
+    var current = this.head;
+    while (count !== index) {
+      current = current.next;
+      count++;
+    }
+    return current;
+  }
+
+  set(index, val) {
+    var foundNode = this.get(index);
+    if (foundNode) {
+      foundNode.val = val;
+      return true;
+    }
+    return false;
+  }
 }
 
 var list = new SinglyLinkedList();
